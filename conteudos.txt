@@ -1,0 +1,79 @@
+CARROS ELETRICOS
+
+Main features
+	pequeno contexto / história
+	maiores produtores
+	top 3/5 modelos (SLIDE)
+	--- parte mais complexa provavelmente---
+		comparar modelos
+	futuros carros a serem fabricados
+
+Algures na página:
+	menu de navegação
+	contacto
+
+
+
+>>>>>>>>>>>>>>> História
+Apesar da ideia de carros elétricos ser um conceito relativamente moderno, o primeiro carro
+elétrico foi criado em 1835 por Thomas Davenport, apesar de em 1828 o húngaro Ányos Jedlik já ter pensado num projeto para um carro elétrico.
+
+Estes veículos são caracterizados pela utilização de motores elétricos. Estes fazem com que não sejam emitidos quaisquer gases nocivos para o ambiente. Para além disso são muito mais silenciosos que os motores a combustão.
+
+Ao longo dos anos, diversas marcas famosas de fabricação de carros têm vindo a aumentar a produção de carros elétricos nas suas fábricas. Estes têm vindo a ganhar mais interesse de compra, devido ao aumento das alterações climáticas e ao problema que os carros com motores a combustão têm vido a causar no nosso planeta.
+
+Em Portugal tem vindo a aumentar o investimento em carros elétricos. Isto foi incentivado pelo facto do Governo Português conceder alguns benefícios fiscais para quem adquirisse um carro elétrico.
+
+
+  
+>>>>>>>>>>>>>>> Maiores Produtores
+BYD
+  Fabricante chinesa de carros elétricos com sede em Shenzhen fundada em 1995.
+  
+  Esta também produz autocarros e bicicletas elétricas, assim como paineis solares e baterias recarregáveis.
+
+  Os seus carros elétricos foram considerados os No.1 mundialmente em vendas durante seis anos consecutivos (2014 - 2019).
+
+  Na primeira metade de 2020, BYD vendeu 46.554 carros. O modelo mais popular, BYD E6, tem um preço aproximado de 29.500€.
+
+Volkswagen
+  Fabricante de carros alemã fundada em 1937 na cidade de Berlim.
+
+  Esta produz dois modelos de carros elétricos: E-Up! e E-Golf. A meta da marca é produzir 50 carros elétricos até 2025. Para isso, a VW irá investir 30 mil milhões de euros em tecnologias relacionadas com carros elétricos.
+
+  VW é a terceira fabricante de carros elétricos mais popular no mundo. Na primeira metade de 2020, vendeu 64.542 carros. O preço do modelo E-UP! tem um preço base de 21.975€.
+
+Renault–Nissan–Mitsubishi
+  Renault/Nissan é um grupo Francês-Japones formado pela Renault (com sede em França), Nissan e Mitsubishi Motors (ambas com sede no Japão).
+
+  Carros elétricos produzidos por este grupo, como o Nissan Leaf e o Renault Zoe, são feitos para o mercado comum. Os seus carros são silenciosos, suaves e responsivos.
+
+  Renault/Nissan foi a segunda fabricante de carros elétricos em termos de vendas mundiais, na primeira metado de 2020, vendendo assim 65.521 carros. O preço dos seus modelos mais populares, variam entre os 29.500€ e os 37.000€.
+
+Tesla
+  Fabricante americana, fundada em 2003 pelo seu diretor Elon Musk.
+
+  Esta é provavelmente a mais conhecida produtora de carros elétricos. Foi fundada com o intuito de provar que os carros elétricos são rápidos, divertidos e mais convenientes que os carros a combustão. A Tesla pretende criar um futuro com carros sem dependência a combustíveis fósseis e sem quaisquer emissões.
+
+  A Tesla foi a maior produtora de carros eçétricos na primeira metade de 2020, com 179.050 carros vendidos. Existe uma alta procura por carros da Tesla devido à sua tecnologia, design moderno e altas performances. Os modelos desta marca variam entre 28.500€ (Model 3) e 63.000€ (Model X, modelo mais caro).
+
+
+
+>>>>>>>>>>>>>>> Top 3 carros
+Porsche Taycan 4S
+$103,800 - $185,000
+kWh / 100 mi. --> 50
+0 - 100Km/H --> 4.0s
+
+Tesla Model 3 Performance
+$37,990 - $54,990
+kWh / 100 mi. --> 30
+0 - 100Km/H --> 3.3s
+
+Tesla Model S Performance
+$139,990
+kWh / 100 mi. --> Sem informação
+0 - 100Km/H --> 3.8s
+
+
+
