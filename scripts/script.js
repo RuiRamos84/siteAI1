@@ -39,7 +39,7 @@ function comp1() {
     document.getElementById("preco"+i).innerHTML = "&nbsp";
   }
   if(x==2){ 
-    document.getElementById("image"+i).innerHTML ="<img src=\"./img/Todas/tesla-model-3.jpg\" width=\"125px\" height=\"125px\">";
+    document.getElementById("image"+i).innerHTML ="<img src=\"./img/Todas/tesla_S.png\" width=\"125px\" height=\"125px\">";
     document.getElementById("nome"+i).innerHTML = car1[0];
     document.getElementById("autonomia"+i).innerHTML = car1[1];
     document.getElementById("potencia"+i).innerHTML = car1[2];
@@ -52,7 +52,8 @@ function comp1() {
     document.getElementById("capacidade"+i).innerHTML = car1[9];
     document.getElementById("preco"+i).innerHTML = car1[10];
   }
-  if(x==3){  
+  if(x==3){
+    document.getElementById("image"+i).innerHTML ="<img src=\"./img/Todas/tesla-3.jpg\" width=\"125px\" height=\"125px\">";  
     document.getElementById("nome"+i).innerHTML = car2[0];
     document.getElementById("autonomia"+i).innerHTML = car2[1];
     document.getElementById("potencia"+i).innerHTML = car2[2];
@@ -66,6 +67,7 @@ function comp1() {
     document.getElementById("preco"+i).innerHTML = car2[10];
   }
   if(x==4){  
+    document.getElementById("image"+i).innerHTML ="<img src=\"./img/Todas/teslaX.png\" width=\"125px\" height=\"125px\">";  
     document.getElementById("nome"+i).innerHTML = car3[0];
     document.getElementById("autonomia"+i).innerHTML = car3[1];
     document.getElementById("potencia"+i).innerHTML = car3[2];
@@ -79,6 +81,7 @@ function comp1() {
     document.getElementById("preco"+i).innerHTML = car3[10];
   }
   if(x==5){ 
+    document.getElementById("image"+i).innerHTML ="<img src=\"./img/Todas/modelY.jpg\" width=\"125px\" height=\"125px\">"; 
     document.getElementById("nome"+i).innerHTML = car4[0];
     document.getElementById("autonomia"+i).innerHTML = car4[1];
     document.getElementById("potencia"+i).innerHTML = car4[2];
@@ -105,6 +108,7 @@ function comp1() {
     document.getElementById("preco"+i).innerHTML = car5[10];
   }
   if(x==7){ 
+    document.getElementById("image"+i).innerHTML ="<img src=\"./img/Todas/zoe.jpg\" width=\"125px\" height=\"125px\">";     
     document.getElementById("nome"+i).innerHTML = car6[0];
     document.getElementById("autonomia"+i).innerHTML = car6[1];
     document.getElementById("potencia"+i).innerHTML = car6[2];
@@ -118,6 +122,7 @@ function comp1() {
     document.getElementById("preco"+i).innerHTML = car6[10];
   }
   if(x==8){ 
+    document.getElementById("image"+i).innerHTML ="<img src=\"./img/Todas/byde6.jpg\" width=\"125px\" height=\"125px\">";
     document.getElementById("nome"+i).innerHTML = car7[0];
     document.getElementById("autonomia"+i).innerHTML = car7[1];
     document.getElementById("potencia"+i).innerHTML = car7[2];
