@@ -11,14 +11,14 @@ function navbarscroll() {
   }
 }
 /**COMPARADOR **/
-var car1 = ["Tesla Model S", "639km", "613cv/451kW", "261 km/h", "2,5s", "Sim", "Sim", "2236kg", "5", "804l", "106.600€"];
-var car2 = ["Tesla Model 3", "567km", "351cv/258kW", "261 km/h", "3,3s", "Sim", "Sim", "1844kg", "5", "524l", "59.600€"];
-var car3 = ["Tesla Model X", "548km", "613cv/451kW", "261 km/h", "2,8s", "Sim", "Sim", "2494kg", "7", "2487l", "112.000€"];
-var car4 = ["Tesla Model Y", "505km", "462cv/340kW", "241 km/h", "3,7s", "Sim", "Sim", "2003kg", "7", "1900l", "71.000€"];
-var car5 = ["Porsche Taycan 4S", "350km", "530cv/390kW", "250 km/h", "4,0s", "Sim", "Não", "2003kg", "5", "500l", "110.128€"];
-var car6 = ["Renault Zoe", "450km", "110cv/80kW", "140 km/h", "11,4s", "Não", "Não", "1988kg", "5", "425l", "23.690€"];
-var car7 = ["Byd E6", "300km", "122cv/90kW", "160 km/h", "8,0s", "Sim", "Não", "2020kg", "5", "450l", "32.900€"];
-var car8 = ["Volkswagen e-Golf", "231km", "136cv/100kW", "150 km/h", "9,6s", "Sim", "Não", "1988kg", "5", "1231l", "42.901€"];
+var car1 = ["Tesla Model S", "639km", "613cv/451kW", "261 km/h", "2.5s", "Sim", "Sim", "2236kg", "5", "804l", "106.600€"];
+var car2 = ["Tesla Model 3", "567km", "351cv/258kW", "261 km/h", "3.3s", "Sim", "Sim", "1844kg", "5", "524l", "59.600€"];
+var car3 = ["Tesla Model X", "548km", "613cv/451kW", "261 km/h", "2.8s", "Sim", "Sim", "2494kg", "7", "2487l", "112.000€"];
+var car4 = ["Tesla Model Y", "505km", "462cv/340kW", "241 km/h", "3.7s", "Sim", "Sim", "2003kg", "7", "1900l", "71.000€"];
+var car5 = ["Porsche Taycan 4S", "350km", "530cv/390kW", "250 km/h", "4.0s", "Sim", "Não", "2003kg", "5", "500l", "110.128€"];
+var car6 = ["Renault Zoe", "450km", "110cv/80kW", "140 km/h", "11.4s", "Não", "Não", "1988kg", "5", "425l", "23.690€"];
+var car7 = ["Byd E6", "300km", "122cv/90kW", "160 km/h", "8.0s", "Sim", "Não", "2020kg", "5", "450l", "32.900€"];
+var car8 = ["Volkswagen e-Golf", "231km", "136cv/100kW", "150 km/h", "9.6s", "Sim", "Não", "1988kg", "5", "1231l", "42.901€"];
 
 
 function comp1(elem) {
@@ -163,15 +163,17 @@ function compare(){
 
     var auto = document.getElementById("autonomia"+i).textContent;
     var auto2 = document.getElementById("autonomia"+w).textContent;
-
-    var preco = document.getElementById("preco"+i).textContent;
-    var preco2 = document.getElementById("preco"+w).textContent;
-
-    //var auto = document.getElementById("autonomia"+i).textContent;
-    //var auto2 = document.getElementById("autonomia"+w).textContent;
-
-    //var auto = document.getElementById("autonomia"+i).textContent;
-    //var auto2 = document.getElementById("autonomia"+w).textContent;
+    var preco = parseFloat(document.getElementById("preco"+i).textContent);
+    var preco2 = parseFloat(document.getElementById("preco"+w).textContent);
+    var potencia = parseInt(document.getElementById("potencia"+i).textContent);
+    var potencia2 = parseInt(document.getElementById("potencia"+w).textContent);
+    var velocidade = document.getElementById("velocidade"+i).textContent;
+    var velocidade2 = document.getElementById("velocidade"+w).textContent;
+    var aceleracao = parseFloat(document.getElementById("aceleracao"+i).textContent);
+    var aceleracao2 = parseFloat(document.getElementById("aceleracao"+w).textContent);
+    console.log(aceleracao);
+    var super1 = document.getElementById("super"+i).textContent;
+    var super2 = document.getElementById("super"+w).textContent;
 
 
   if(auto>auto2){
@@ -186,33 +188,91 @@ function compare(){
         document.getElementById("auton_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
         document.getElementById("auton_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
   }
-}
 
-if(preco>preco2){
-        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+
+if(preco<preco2){
+        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";
         document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
   }
-  else if(preco<preco2) {
-        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
-        document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  else if(preco>preco2) {
+        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+        document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";
   }
   else if(preco==preco2){
-        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
-        document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";
+        document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";
   }
+
+  if(potencia>potencia2){
+        document.getElementById("pot_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("pot_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(potencia<potencia2) {
+        document.getElementById("pot_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("pot_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(potencia==potencia2){
+        document.getElementById("pot_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("pot_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+
+  if(velocidade>velocidade2){
+        document.getElementById("vel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("vel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(velocidade<velocidade2) {
+        document.getElementById("vel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("vel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(velocidade==velocidade2){
+        document.getElementById("vel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("vel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+
+    if(aceleracao>aceleracao2){
+        document.getElementById("acel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("acel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(aceleracao<aceleracao2) {
+        document.getElementById("acel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("acel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(aceleracao==aceleracao2){
+        document.getElementById("acel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("acel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+
+  if(super1=="Sim"&&super2=="Não"){
+        document.getElementById("super_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("super_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(super1=="Não"&&super2=="Sim") {
+        document.getElementById("super_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("super_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(super1==super2){
+        document.getElementById("super_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("super_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+
 
 if(x==1||y==1){
         document.getElementById("auton_arrow"+i).innerHTML ="&nbsp"
         document.getElementById("auton_arrow"+w).innerHTML ="&nbsp"
         document.getElementById("preco_arrow"+i).innerHTML ="&nbsp"
         document.getElementById("preco_arrow"+w).innerHTML ="&nbsp"
-  
+        document.getElementById("pot_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("pot_arrow"+w).innerHTML ="&nbsp"
+        document.getElementById("acel_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("acel_arrow"+w).innerHTML ="&nbsp"
+        document.getElementById("vel_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("vel_arrow"+w).innerHTML ="&nbsp"
+        document.getElementById("super_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("super_arrow"+w).innerHTML ="&nbsp"
   }
 
-
 }
-
-  
+}  
 
 
 /**FIM COMPARADOR **/
