@@ -164,10 +164,19 @@ function compare(){
     var auto = document.getElementById("autonomia"+i).textContent;
     var auto2 = document.getElementById("autonomia"+w).textContent;
 
+    var preco = document.getElementById("preco"+i).textContent;
+    var preco2 = document.getElementById("preco"+w).textContent;
+
+    //var auto = document.getElementById("autonomia"+i).textContent;
+    //var auto2 = document.getElementById("autonomia"+w).textContent;
+
+    //var auto = document.getElementById("autonomia"+i).textContent;
+    //var auto2 = document.getElementById("autonomia"+w).textContent;
+
+
   if(auto>auto2){
         document.getElementById("auton_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
         document.getElementById("auton_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
-        
   }
   else if(auto<auto2) {
         document.getElementById("auton_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
@@ -178,11 +187,32 @@ function compare(){
         document.getElementById("auton_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
   }
 }
+
+if(preco>preco2){
+        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(preco<preco2) {
+        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(preco==preco2){
+        document.getElementById("preco_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("preco_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+
 if(x==1||y==1){
         document.getElementById("auton_arrow"+i).innerHTML ="&nbsp"
         document.getElementById("auton_arrow"+w).innerHTML ="&nbsp"
-  }
+        document.getElementById("preco_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("preco_arrow"+w).innerHTML ="&nbsp"
   
+  }
+
 
 }
+
+  
+
+
 /**FIM COMPARADOR **/
