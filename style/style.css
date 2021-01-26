@@ -1,12 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
-    background:#f2f2f2;
+    background:#fafafa;
     font-size:18px;
     color:#333;
     font-weight:400;
     font-family:"Source Sans Pro",Arial,sans-serif;
-    margin:0;
-    line-height:1.3em;
-    overflow-x:hidden
+    margin: 0;
+    overflow-x:hidden;
 }
 
 /* Style the navbar */
@@ -14,7 +17,6 @@ body{
   overflow: hidden;
   background-color: #333;  
   padding-left: 15%;
-  
 }
 
 #navbar a {
@@ -25,7 +27,6 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
   
 }
 
@@ -51,55 +52,195 @@ body{
   position:sticky;
   top:0%;
   width: 100%;
+  z-index: 1;
 }
 
 .sticky + .content {
   padding-top: 60px;
+  z-index: 1;
 }
 
-#the-final-countdown{
-  float: right;
+#the-final-countdown{ 
+ padding: 7.3px 0 7.3px 0;
+ text-align: right;
+ font-size: 14px;
+ float: none;
+ overflow:hidden;
+ padding-right: 1%;
+ 
+}
+footer {
+  overflow: hidden;
+  background-color: #333;  
+  padding-left: 14%;
+  
+}
+
+footer a {
+  float: left;
+  display: block;
   color: #f2f2f2;
-  text-align: left;
-  padding: 1%;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   font-size: 17px;
   
-  
-}
-#the-final-countdown p {
-   margin: 1px;
-   padding: 5%;
-   display: inline;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  position: relative;
-  padding-left: 15%;
-  padding-right: 15%;
-  
-}
 
-#customers {
+#compare {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td, #customers th {
+#compare td, #compare th {
   border: 1px solid #ddd;
   padding: 8px;
+  align-content: center;
+  text-align: center;
 }
+#compare .att{
+text-align: left;
+font-weight: bold;
+}
+#compare tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#compare tr:hover {background-color: #ddd;}
 
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
+#compare th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
   background-color: #4e96f3;
   color: white;
+}
+
+.historia {
+  background-color: #fafafa;
+  box-shadow: 0px 0px 15px 2px #f0f0f0;
+  border-radius: 10px;
+}
+
+.historiaTitulo {
+  padding-top: 20px;
+  padding-left: 20px;
+  height: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4e96f3;
+  font-size: 32px;
+  margin: 0px;
+}
+
+.historiaTexto {
+  padding: 25px;
+  padding-top: 0px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imgHistoria {
+  position: relative;
+  float: right;
+  width: 18%;
+  height: 18%;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 12px;  
+}
+
+.imagemHistoria {  
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.maioresProd {
+  position: relative;
+  top: 20px;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 15px 2px #f0f0f0;
+  border-radius: 10px;
+}
+
+.maioresProdTitulo {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4e96f3;
+  font-size: 32px;
+}
+
+.caixaMarca {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.imagemMarca {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.nomeMarca {  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  margin: 0px;
+  padding-left: 18%;
+}
+
+.nomeMarca a:link {  
+  text-decoration: none;
+}
+.nomeMarca a:visited {  
+  color: #363636;
+  text-decoration: none;
+}
+.nomeMarca a:hover {  
+  color: #4e96f3; 
+  text-decoration: underline; 
+}
+
+.textoMarca {  
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  padding-left: 20%;
+  padding-right: 5%;
+}
+
+.imagemBYD {
+  float: left;
+  width: 80%;
+  height: 80%;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.imagemVW {
+  float: left;
+  width: 80%;
+  height: 80%;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+.imagemRNM {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-left: 0%;
+  padding-top: 10%;
+}
+
+.imagemTESLA {
+  float: left;
+  width: 80%;
+  height: 80%;
+  padding-left: 10%;
+  padding-top: 15%;
 }

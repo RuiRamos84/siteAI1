@@ -1,3 +1,4 @@
+
 setInterval(function time() {
   var d = new Date();
   var da = d.getDate();
@@ -15,6 +16,5 @@ setInterval(function time() {
   if ((sec + '').length == 1) {
     sec = '0' + sec;
   }
-  jQuery('#the-final-countdown p').html(da + '/' + month + '/' + year + '&nbsp' + hours + ':' + min + ':' + sec)
+  jQuery('#the-final-countdown').html(hours + ':' + min + '.' + sec + '&nbsp&nbsp' + '<br>'+da + '/' + month + '/' + year  )
 }, 1000);
-
