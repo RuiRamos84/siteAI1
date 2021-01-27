@@ -11,14 +11,14 @@ function navbarscroll() {
   }
 }
 /**COMPARADOR **/
-var car1 = ["Tesla Model S", "639km", "613cv/451kW", "261 km/h", "2.5s", "Sim", "Sim", "2236kg", "5", "804l", "106.600€"];
-var car2 = ["Tesla Model 3", "567km", "351cv/258kW", "261 km/h", "3.3s", "Sim", "Sim", "1844kg", "5", "524l", "59.600€"];
-var car3 = ["Tesla Model X", "548km", "613cv/451kW", "261 km/h", "2.8s", "Sim", "Sim", "2494kg", "7", "2487l", "112.000€"];
-var car4 = ["Tesla Model Y", "505km", "462cv/340kW", "241 km/h", "3.7s", "Sim", "Sim", "2003kg", "7", "1900l", "71.000€"];
-var car5 = ["Porsche Taycan 4S", "350km", "530cv/390kW", "250 km/h", "4.0s", "Sim", "Não", "2003kg", "5", "500l", "110.128€"];
-var car6 = ["Renault Zoe", "450km", "110cv/80kW", "140 km/h", "11.4s", "Não", "Não", "1988kg", "5", "425l", "23.690€"];
-var car7 = ["Byd E6", "300km", "122cv/90kW", "160 km/h", "8.0s", "Sim", "Não", "2020kg", "5", "450l", "32.900€"];
-var car8 = ["Volkswagen e-Golf", "231km", "136cv/100kW", "150 km/h", "9.6s", "Sim", "Não", "1988kg", "5", "1231l", "42.901€"];
+var car1 = ["Tesla Model S", "639km", "613cv/451kW", "261 km/h", "2.5s", "Sim", "Sim", "2236kg", "5", "804lt", "106.600€"];
+var car2 = ["Tesla Model 3", "567km", "351cv/258kW", "261 km/h", "3.3s", "Sim", "Sim", "1844kg", "5", "524lt", "59.600€"];
+var car3 = ["Tesla Model X", "548km", "613cv/451kW", "261 km/h", "2.8s", "Sim", "Sim", "2494kg", "7", "2487lt", "112.000€"];
+var car4 = ["Tesla Model Y", "505km", "462cv/340kW", "241 km/h", "3.7s", "Sim", "Sim", "2003kg", "7", "1900lt", "71.000€"];
+var car5 = ["Porsche Taycan 4S", "350km", "530cv/390kW", "250 km/h", "4.0s", "Sim", "Não", "2003kg", "5", "500lt", "110.128€"];
+var car6 = ["Renault Zoe", "450km", "110cv/80kW", "140 km/h", "11.4s", "Não", "Não", "1988kg", "5", "425lt", "23.690€"];
+var car7 = ["Byd E6", "300km", "122cv/90kW", "160 km/h", "8.0s", "Sim", "Não", "2020kg", "5", "450lt", "32.900€"];
+var car8 = ["Volkswagen e-Golf", "231km", "136cv/100kW", "150 km/h", "9.6s", "Sim", "Não", "1988kg", "5", "1231lt", "42.901€"];
 
 
 function comp1(elem) {
@@ -171,10 +171,16 @@ function compare(){
     var velocidade2 = document.getElementById("velocidade"+w).textContent;
     var aceleracao = parseFloat(document.getElementById("aceleracao"+i).textContent);
     var aceleracao2 = parseFloat(document.getElementById("aceleracao"+w).textContent);
-    console.log(aceleracao);
     var super1 = document.getElementById("super"+i).textContent;
     var super2 = document.getElementById("super"+w).textContent;
-
+    var piloto = document.getElementById("piloto"+i).textContent;
+    var piloto2= document.getElementById("piloto"+w).textContent;
+    var peso = parseInt(document.getElementById("peso"+i).textContent);
+    var peso2 = parseInt(document.getElementById("peso"+w).textContent);
+    var lugares = parseInt(document.getElementById("lugares"+i).textContent);
+    var lugares2 = parseInt(document.getElementById("lugares"+w).textContent);
+    var capacidade = parseInt(document.getElementById("capacidade"+i).textContent);
+    var capacidade2 = parseInt(document.getElementById("capacidade"+w).textContent);
 
   if(auto>auto2){
         document.getElementById("auton_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
@@ -229,11 +235,11 @@ if(preco<preco2){
         document.getElementById("vel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
   }
 
-    if(aceleracao>aceleracao2){
+  if(aceleracao<aceleracao2){
         document.getElementById("acel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
         document.getElementById("acel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
   }
-  else if(aceleracao<aceleracao2) {
+  else if(aceleracao>aceleracao2) {
         document.getElementById("acel_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
         document.getElementById("acel_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
   }
@@ -255,8 +261,60 @@ if(preco<preco2){
         document.getElementById("super_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
   }
 
+  if(piloto=="Sim"&&piloto2=="Não"){
+        document.getElementById("pilot_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("pilot_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(piloto=="Não"&&piloto2=="Sim") {
+        document.getElementById("pilot_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("pilot_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(piloto==piloto2){
+        document.getElementById("pilot_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("pilot_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  if(peso>peso2){
+        document.getElementById("peso_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("peso_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(peso<peso2) {
+        document.getElementById("peso_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("peso_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(peso==peso2){
+        document.getElementById("peso_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("peso_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  if(lugares>lugares2){
+        document.getElementById("lugares_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("lugares_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(lugares<lugares2) {
+        document.getElementById("lugares_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("lugares_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(lugares==lugares2){
+        document.getElementById("lugares_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("lugares_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+
+  if(capacidade>capacidade2){
+        document.getElementById("cap_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("cap_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";
+  }
+  else if(capacidade<capacidade2) {
+        document.getElementById("cap_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/red.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("cap_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/green.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+  else if(capacidade==capacidade2){
+        document.getElementById("cap_arrow"+i).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//verde
+        document.getElementById("cap_arrow"+w).innerHTML ="<img src=\"./img/Todas/comp/null.png\" width=\"15px\" height=\"15px\">";//vermelho
+  }
+
+}
 
 if(x==1||y==1){
+  console.log("im");
         document.getElementById("auton_arrow"+i).innerHTML ="&nbsp"
         document.getElementById("auton_arrow"+w).innerHTML ="&nbsp"
         document.getElementById("preco_arrow"+i).innerHTML ="&nbsp"
@@ -269,9 +327,17 @@ if(x==1||y==1){
         document.getElementById("vel_arrow"+w).innerHTML ="&nbsp"
         document.getElementById("super_arrow"+i).innerHTML ="&nbsp"
         document.getElementById("super_arrow"+w).innerHTML ="&nbsp"
+        document.getElementById("pilot_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("pilot_arrow"+w).innerHTML ="&nbsp"
+        document.getElementById("peso_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("peso_arrow"+w).innerHTML ="&nbsp"
+        document.getElementById("lugares_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("lugares_arrow"+w).innerHTML ="&nbsp"
+        document.getElementById("cap_arrow"+i).innerHTML ="&nbsp"
+        document.getElementById("cap_arrow"+w).innerHTML ="&nbsp"
   }
 
-}
+
 }  
 
 
