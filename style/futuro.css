@@ -1,0 +1,37 @@
+/** ---------------------- FUTURO ---------------------- **/
+.futuro {
+  position: relative;
+  top: 25px;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 15px 2px #e4e4e4;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+  
+.futuroTexto {
+  position: relative;
+  margin: 50px 50px 0px 50px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.futuro .caixaImg {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: -30px;
+  padding: 5px 4px 0px 4px;
+}
+
+.futuro .caixaImg .texto {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.textoPequeno {
+  font-size: 13px;
+  color:darkgray;
+}

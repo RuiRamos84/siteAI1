@@ -1,269 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
 
-<head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>AutoKW</title>
-	<link href="./style/style.css" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<script src="/scripts/react.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-	
-</head>
-<img src="./img/head_medium.png" width="100%" height="auto">
-<body>
+    <title>AutoKW</title>
+    <meta name="author" content="18466 - Roberto Meneses; 19222 - João Machado; 18546 - Rui Ramos">
+    <meta name="keywords" content="Carros Elétricos, Energia, Projeto Faculdade">
+    <meta name="description" content="Projeto da faculdade. Página sobre carros elétricos">
+    
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <link href="./style/navbar.css" rel="stylesheet" type="text/css" />
+    
+    <link href="./style/historia.css" rel="stylesheet" type="text/css" />
+    <link href="./style/maiores_produtores.css" rel="stylesheet" type="text/css" />
+    <link href="./style/top3.css" rel="stylesheet" type="text/css" />
+    <link href="./style/comparar.css" rel="stylesheet" type="text/css" />
+    <link href="./style/futuro.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/react.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<div class="header">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+  </head>
 
-</div>
 
-<div id="navbar">
-  <a href="#1">História</a>
-  <a href="#2">Maiores Produtores</a>
+  <img src="./img/head_medium.png" class="imagemHeader">
+  <img src="./img/arrow_up.png" id="top">
+
+  <body>
+    <!-- Redes Sociais -->
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.google.pt/" class="google"><i class="fa fa-google"></i></a>
+      <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <div class="header"> </div>
+  <div class="topnav" id="myTopnav">
+  <a href="#1" class="active">História</a>
+  <div class="dropdown">
+    <button class="dropbtn">Maiores Produtores
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="drop">
+      <a href="#marca1">Byd 1</a>
+      <a href="#marca2">Volkswagen</a>
+      <a href="#marca3">Renault–Nissan–Mitsubishi</a>
+      <a href="#marca4">Tesla</a>
+    </div>
+  </div>
   <a href="#3">Top 3</a>
   <a href="#4">Comparador</a>
   <a href="#5">Futuro</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
+  <a href="./form/form.html">Contacto</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+ 
 </div>
 
-  <div class="content">
-    <div class="page-section" id="1"></div>
-    <div class="historia">
-      <div class="Titulos">História</div>
+    <div class="content">
+      <!-- HISTÓRIA -->
+      <div class="page-section" id="1"></div>
+      <div class="historia">
+        <div class="Titulos">História</div>
         <div class="imgHistoria">
           <img src="./img/primeiro_CE.jpg" class="imagemHistoria">
           Primeiro carro elétrico (1835)
         </div>
-          <div class="historiaTexto">
+        <div class="historiaTexto">
           <p>Apesar da ideia de carros elétricos ser um conceito relativamente moderno, o primeiro carro elétrico foi criado em 1835 por Thomas Davenport, apesar de em 1828 o húngaro Ányos Jedlik já ter pensado num projeto para um carro elétrico.</p>
           <p>Estes veículos são caracterizados pela utilização de motores elétricos. Estes fazem com que não sejam emitidos quaisquer gases nocivos para o ambiente. Para além disso são muito mais silenciosos que os motores a combustão.</p>
           <p>Ao longo dos anos, diversas marcas famosas de fabricação de carros têm vindo a aumentar a produção de carros elétricos nas suas fábricas. Estes têm vindo a ganhar mais interesse de compra, devido ao aumento das alterações climáticas e ao problema que os carros com motores a combustão têm vido a causar no nosso planeta.</p>
           <p>Em Portugal tem vindo a aumentar o investimento em carros elétricos. Isto foi incentivado pelo facto do Governo Português conceder alguns benefícios fiscais para quem adquirisse um carro elétrico.</p>
         </div>  
-      </div> 
-<br>
-<div class="page-section" id="2"></div>
+      </div>
+      <br>
+      <!-- FIM HISTÓRIA -->
+      
+      <!-- MAIORES PRODUTORES -->
+      <div class="page-section" id="2"></div>
       <div class="maioresProd">
         <div class="Titulos">Maiores Produtores</div>
-        
-          <div class="caixaMarca">
-            <div class="imagemMarca">
-              <img src="./img/Marcas/BYD.png" class="imagemBYD">
-            </div>
-            <p class="nomeMarca"> <a href="https://www.byd.com/en/index.html" target="_blank"> BYD </a> </p> 
-            <div class="textoMarca">
-              <p>Fabricante chinesa de carros elétricos com sede em Shenzhen fundada em 1995. </p>
-              <p>Esta também produz autocarros e bicicletas elétricas, assim como paineis solares e baterias recarregáveis. </p>
-              <p>Os seus carros elétricos foram considerados os No.1 mundialmente em vendas durante seis anos consecutivos (2014 - 2019). </p>
-              <p>Na primeira metade de 2020, BYD vendeu 46.554 carros. O modelo mais popular, BYD E6, tem um preço aproximado de 29.500€. </p>  
-            </div>        
+        <div class="page-section" id="marca1"></div>
+        <div class="caixaMarca">
+          <div class="imagemMarca">
+            <img src="./img/Marcas/BYD.png" class="imagemBYD">
           </div>
-
-          <div class="caixaMarca">
-            <div class="imagemMarca">
-              <img src="./img/Marcas/VW.png" class="imagemVW">
-            </div>
-            <p class="nomeMarca"> <a href="https://www.volkswagen.pt/pt.html" target="_blank"> Volkswagen </a> </p>
-            <div class="textoMarca">
-              <p>Fabricante de carros alemã fundada em 1937 na cidade de Berlim.</p>
-              <p>Esta produz dois modelos de carros elétricos: E-Up! e E-Golf. A meta da marca é produzir 50 carros elétricos até 2025. Para isso, a VW irá investir 30 mil milhões de euros em tecnologias relacionadas com carros elétricos.</p>
-              <p>VW é a terceira fabricante de carros elétricos mais popular no mundo. Na primeira metade de 2020, vendeu 64.542 carros. O preço do modelo E-UP! tem um preço base de 21.975€.</p>
-            </div>            
+          <p class="nomeMarca"> <a href="https://www.byd.com/en/index.html" target="_blank"> BYD </a> </p> 
+          <div class="textoMarca">
+            <p>Fabricante chinesa de carros elétricos com sede em Shenzhen fundada em 1995. </p>
+            <p>Esta também produz autocarros e bicicletas elétricas, assim como paineis solares e baterias recarregáveis. </p>
+            <p>Os seus carros elétricos foram considerados os No.1 mundialmente em vendas durante seis anos consecutivos (2014 - 2019). </p>
+            <p>Na primeira metade de 2020, BYD vendeu 46.554 carros. O modelo mais popular, BYD E6, tem um preço aproximado de 29.500€. </p>  
+          </div>        
+        </div>
+        <div class="page-section" id="marca2"></div>
+        <div class="caixaMarca">
+          <div class="imagemMarca">
+            <img src="./img/Marcas/VW.png" class="imagemVW">
           </div>
-
-          <div class="caixaMarca">
-            <div class="imagemMarca">
-              <img src="./img/Marcas/Renault_Nissan_Mitsubishi.png" class="imagemRNM">
-            </div>
-            <p class="nomeMarca"> <a href="https://www.alliance-2022.com" target="_blank"> Renault–Nissan–Mitsubishi </a> </p> 
-            <div class="textoMarca">
-              <p>Renault/Nissan é um grupo Francês-Japones formado pela Renault (com sede em França), Nissan e Mitsubishi Motors (ambas com sede no Japão).</p>
-              <p>Carros elétricos produzidos por este grupo, como o Nissan Leaf e o Renault Zoe, são feitos para o mercado comum. Os seus carros são silenciosos, suaves e responsivos.</p>     
-              <p>Renault/Nissan foi a segunda fabricante de carros elétricos em termos de vendas mundiais, na primeira metado de 2020, vendendo assim 65.521 carros. O preço dos seus modelos mais populares, variam entre os 29.500€ e os 37.000€.</p>
-            </div>             
+          <p class="nomeMarca"> <a href="https://www.volkswagen.pt/pt.html" target="_blank"> Volkswagen </a> </p>
+          <div class="textoMarca">
+            <p>Fabricante de carros alemã fundada em 1937 na cidade de Berlim.</p>
+            <p>Esta produz dois modelos de carros elétricos: E-Up! e E-Golf. A meta da marca é produzir 50 carros elétricos até 2025. Para isso, a VW irá investir 30 mil milhões de euros em tecnologias relacionadas com carros elétricos.</p>
+            <p>VW é a terceira fabricante de carros elétricos mais popular no mundo. Na primeira metade de 2020, vendeu 64.542 carros. O preço do modelo E-UP! tem um preço base de 21.975€.</p>
+          </div>            
+        </div>
+        <div class="page-section" id="marca3"></div>
+        <div class="caixaMarca">
+          <div class="imagemMarca">
+            <img src="./img/Marcas/Renault_Nissan_Mitsubishi.png" class="imagemRNM">
           </div>
-          
-          <div class="caixaMarca">
-            <div class="imagemMarca">
-              <img src="./img/Marcas/Tesla.png" class="imagemTESLA">
-            </div>
-            <p class="nomeMarca"> <a href="https://www.tesla.com/pt_pt" target="_blank"> Tesla </a> </p> 
-            <div class="textoMarca">
-              <p>Fabricante americana, fundada em 2003 pelo seu diretor Elon Musk.</p>
-              <p>Esta é provavelmente a mais conhecida produtora de carros elétricos. Foi fundada com o intuito de provar que os carros elétricos são rápidos, divertidos e mais convenientes que os carros a combustão. A Tesla pretende criar um futuro com carros sem dependência a combustíveis fósseis e sem quaisquer emissões.</p>        
-              <p>A Tesla foi a maior produtora de carros eçétricos na primeira metade de 2020, com 179.050 carros vendidos. Existe uma alta procura por carros da Tesla devido à sua tecnologia, design moderno e altas performances. Os modelos desta marca variam entre 28.500€ (Model 3) e 63.000€ (Model X, modelo mais caro).</p>
-            </div>           
+          <p class="nomeMarca"> <a href="https://www.alliance-2022.com" target="_blank"> Renault–Nissan–Mitsubishi </a> </p> 
+          <div class="textoMarca">
+            <p>Renault/Nissan é um grupo Francês-Japones formado pela Renault (com sede em França), Nissan e Mitsubishi Motors (ambas com sede no Japão).</p>
+            <p>Carros elétricos produzidos por este grupo, como o Nissan Leaf e o Renault Zoe, são feitos para o mercado comum. Os seus carros são silenciosos, suaves e responsivos.</p>
+            <p>Renault/Nissan foi a segunda fabricante de carros elétricos em termos de vendas mundiais, na primeira metado de 2020, vendendo assim 65.521 carros. O preço dos seus modelos mais populares, variam entre os 29.500€ e os 37.000€.</p>
+          </div>             
+        </div>
+        <div class="page-section" id="marca4"></div>
+        <div class="caixaMarca">
+          <div class="imagemMarca">
+            <img src="./img/Marcas/Tesla.png" class="imagemTESLA">
           </div>
+          <p class="nomeMarca"> <a href="https://www.tesla.com/pt_pt" target="_blank"> Tesla </a> </p> 
+          <div class="textoMarca">
+            <p>Fabricante americana, fundada em 2003 pelo seu diretor Elon Musk.</p>
+            <p>Esta é provavelmente a mais conhecida produtora de carros elétricos. Foi fundada com o intuito de provar que os carros elétricos são rápidos, divertidos e mais convenientes que os carros a combustão. A Tesla pretende criar um futuro com carros sem dependência a combustíveis fósseis e sem quaisquer emissões.</p>        
+            <p>A Tesla foi a maior produtora de carros eçétricos na primeira metade de 2020, com 179.050 carros vendidos. Existe uma alta procura por carros da Tesla devido à sua tecnologia, design moderno e altas performances. Os modelos desta marca variam entre 28.500€ (Model 3) e 63.000€ (Model X, modelo mais caro).</p>
+          </div>           
+        </div>
       </div>
+      <!-- FIM MAIORES PRODUTORES -->
 
-<div class="page-section" id="3"> </div>
-  <div class="top3"> 
-    <div class="Titulos"> Os 3 Melhores carros elétricos </div>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="img/Top_3/Porsche_Taycan_4S.png" style="width:100%">
-          <div class="top3Texto">
-            <div class="top3Nome"> Porsche Taycan 4S </div>
-            <div class="top3Info">
-              <ul>
-                <li>Preço:  110.128 €</li>
-                <li>Potência: 530cv / 390kW</li>
-                <li>Aceleração dos 0 aos 100Km/h: 4.0 segundos</li>
-              </ul>
+      <!-- TOP 3 CARROS -->
+      <div class="page-section" id="3"> </div>
+      <div class="top3"> 
+        <div class="Titulos"> Os 3 Melhores carros elétricos </div>
+        <div class="slideshow">
+          <div class="slides fade">
+            <img src="img/Top_3/Porsche_Taycan_4S.png" style="width:100%">
+            <div class="top3Texto">
+              <div class="top3Nome"> Porsche Taycan 4S </div>
+              <div class="top3Info">
+                <ul>
+                  <li>Preço:  110.128 €</li>
+                  <li>Potência: 530cv / 390kW</li>
+                  <li>Aceleração dos 0 aos 100Km/h: 4.0 segundos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="slides fade">
+            <img src="img/Top_3/Tesla_Model_3_Performance.png" style="width:100%;">
+            <div class="top3Texto">
+              <div class="top3Nome"> Tesla Model 3 Performance </div>
+              <div class="top3Info">
+                <ul>
+                  <li>Preço:  59.600 €</li>
+                  <li>Potência: 351cv / 258kW</li>
+                  <li>Aceleração dos 0 aos 100Km/h: 3.3 segundos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="slides fade">
+            <img src="img/Top_3/Tesla_Model_S_Performance.png" style="width:100%;">
+            <div class="top3Texto">
+              <div class="top3Nome"> Tesla Model S Performance </div>
+              <div class="top3Info">
+                <ul>
+                  <li>Preço:  106.600 €</li>
+                  <li>Potência: 613cv / 451kW</li>
+                  <li>Aceleração dos 0 aos 100Km/h: 2.5 segundos</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <br>
 
-        <div class="mySlides fade">
-          <img src="img/Top_3/Tesla_Model_3_Performance.png" style="width:100%;">
-          <div class="top3Texto">
-            <div class="top3Nome"> Tesla Model 3 Performance </div>
-            <div class="top3Info">
-              <ul>
-                <li>Preço:  59.600 €</li>
-                <li>Potência: 351cv / 258kW</li>
-                <li>Aceleração dos 0 aos 100Km/h: 3.3 segundos</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="img/Top_3/Tesla_Model_S_Performance.png" style="width:100%;">
-          <div class="top3Texto">
-            <div class="top3Nome"> Tesla Model S Performance </div>
-            <div class="top3Info">
-              <ul>
-                <li>Preço:  106.600 €</li>
-                <li>Potência: 613cv / 451kW</li>
-                <li>Aceleração dos 0 aos 100Km/h: 2.5 segundos</li>
-              </ul>
-            </div>
-          </div>
+        <div style="text-align:center">
+          <span class="ponto"></span>
+          <span class="ponto"></span>
+          <span class="ponto"></span>
         </div>
       </div>
       <br>
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <br>
+      <br>
+      <!-- FIM TOP 3 CARROS -->
+
+      <!-- COMPARADOR -->
+      <div class="page-section" id="4"></div>
+      <div class="comparador">
+        <div class="Titulos">Comparador</div>
+        <br>
+        <br>
+        <table id="compare"  style="margin: 0 auto;">
+          <tr>
+            <td></td>
+            <th>Selecionar Carro<br><select id="dropdown1" onchange="comp1(1)">
+              <option value="1"></option>
+              <option value="2">Tesla Model S</option>
+              <option value="3">Tesla Model 3</option>
+              <option value="4">Tesla Model X</option>
+              <option value="5">Tesla Model Y</option>
+              <option value="6">Porsche Taycan 4S</option>
+              <option value="7">Renault Zoe</option>
+              <option value="8">Byd E6</option>
+              <option value="9">Volkswagen e-Golf</option>
+              </select>
+            </th>
+            <th>Selecionar Carro<br><select id="dropdown2" onchange="comp1(2)">
+              <option value="1"></option>
+              <option value="2">Tesla Model S</option>
+              <option value="3">Tesla Model 3</option>
+              <option value="4">Tesla Model X</option>
+              <option value="5">Tesla Model Y</option>
+              <option value="6">Porsche Taycan 4S</option>
+              <option value="7">Renault Zoe</option>
+              <option value="8">Byd E6</option>
+              <option value="9">Volkswagen e-Golf</option>
+              </select>
+            </th>
+          </tr>
+
+          <tr>
+            <td><div id="noimg"></div></td>
+            <td><div id="image1"></div><div id="nome1"></div></td>
+            <td><div id="image2"></div><div id="nome2"></div></td>
+            <tr>
+              <td class="att">Preço</td>
+              <td><div id="preco1" style="display:inline"></div>&nbsp<div id="preco_arrow1" style="display:inline"></div></td>
+              <td><div id="preco2" style="display:inline"></div>&nbsp<div id="preco_arrow2" style="display:inline"></div></td>
+            </tr>
+          </tr>
+
+          <tr>
+            <td class="att">Autonomia</td>
+            <td><div id="autonomia1" style="display:inline"></div>&nbsp<div id="auton_arrow1" style="display:inline"></div></td>
+            <td><div id="autonomia2" style="display:inline"></div>&nbsp<div id="auton_arrow2" style="display:inline"></div></td>
+          </tr>
+
+          <tr>
+            <td class="att">Potência(cv/kw)</td>
+            <td><div id="potencia1" style="display:inline"></div>&nbsp<div id="pot_arrow1" style="display:inline"></div></td>
+            <td><div id="potencia2" style="display:inline"></div>&nbsp<div id="pot_arrow2" style="display:inline"></div></td>
+          </tr>
+
+          <tr>
+            <td class="att">Velocidade máxima (km/h)</td>
+            <td><div id="velocidade1" style="display:inline"></div>&nbsp<div id="vel_arrow1" style="display:inline"></div></td>
+            <td><div id="velocidade2" style="display:inline"></div>&nbsp<div id="vel_arrow2" style="display:inline"></div></td>
+          </tr>
+
+          <tr>
+            <td class="att">Aceleração de 0-100 (seg)</td>
+            <td><div id="aceleracao1" style="display:inline"></div>&nbsp<div id="acel_arrow1" style="display:inline"></div></td>
+            <td><div id="aceleracao2" style="display:inline"></div>&nbsp<div id="acel_arrow2" style="display:inline"></div></td>
+          </tr>
+
+          <tr>
+            <td class="att">Super Charger</td>
+            <td><div id="super1" style="display:inline"></div>&nbsp<div id="super_arrow1" style="display:inline"></div></td>
+            <td><div id="super2" style="display:inline"></div>&nbsp<div id="super_arrow2" style="display:inline"></div></td>
+          </tr>
+
+          <tr>
+            <td class="att">Piloto Automático</td>
+            <td><div id="piloto1" style="display:inline"></div>&nbsp<div id="pilot_arrow1" style="display:inline"></div></td>
+            <td><div id="piloto2" style="display:inline"></div>&nbsp<div id="pilot_arrow2" style="display:inline"></div></td>
+          </tr>
+
+          <tr>
+            <td class="att">Peso</td>
+            <td><div id="peso1" style="display:inline"></div>&nbsp<div id="peso_arrow1" style="display:inline"></div></td>
+            <td><div id="peso2" style="display:inline"></div>&nbsp<div id="peso_arrow2" style="display:inline"></div></td>
+          </tr>
+          
+          <tr>
+            <td class="att">Lugares</td>
+            <td><div id="lugares1" style="display:inline"></div>&nbsp<div id="lugares_arrow1" style="display:inline"></div></td>
+            <td><div id="lugares2" style="display:inline"></div>&nbsp<div id="lugares_arrow2" style="display:inline"></div></td>
+          </tr>
+
+          <tr>
+            <td class="att">Capacidade Bagageira</td>
+            <td><div id="capacidade1" style="display:inline"></div>&nbsp<div id="cap_arrow1" style="display:inline"></div></td>
+            <td><div id="capacidade2" style="display:inline"></div>&nbsp<div id="cap_arrow2" style="display:inline"></div></td>
+          </tr>
+        </table> 
       </div>
-  </div>
-      
-<br>
-<br>
-<br>
+      <!-- FIM COMPARADOR -->
 
-<div class="page-section" id="4">
-  
-<div class="Titulos">Comparador</div>
-<table id="compare">
-  <tr>
-    <td></td>
- <th>Selecionar Carro<br><select id="dropdown1" onchange="comp1(1)">
-    <option value="1"></option>
-    <option value="2">Tesla Model S</option>
-    <option value="3">Tesla Model 3</option>
-    <option value="4">Tesla Model X</option>
-    <option value="5">Tesla Model Y</option>
-    <option value="6">Porsche Taycan 4S</option>
-    <option value="7">Renault Zoe</option>
-    <option value="8">Byd E6</option>
-    <option value="9">Volkswagen e-Golf</option>
-</select>
-</th>
-    <th>Selecionar Carro<br><select id="dropdown2" onchange="comp1(2)">
-    <option value="1"></option>
-    <option value="2">Tesla Model S</option>
-    <option value="3">Tesla Model 3</option>
-    <option value="4">Tesla Model X</option>
-    <option value="5">Tesla Model Y</option>
-    <option value="6">Porsche Taycan 4S</option>
-    <option value="7">Renault Zoe</option>
-    <option value="8">Byd E6</option>
-    <option value="9">Volkswagen e-Golf</option>
-</select>
-</th>
-  <tr>
-    <td><div id="noimg"></div></td>
-    <td><div id="image1"></div><div id="nome1"></div></td>
-    <td><div id="image2"></div><div id="nome2"></div></td>
-  <tr>
-    <td class="att">Preço</td>
-    <td><div id="preco1" style="display:inline"></div>&nbsp<div id="preco_arrow1" style="display:inline"></div></td>
-    <td><div id="preco2" style="display:inline"></div>&nbsp<div id="preco_arrow2" style="display:inline"></div></td>
-  </tr>
-  </tr>
-    <tr>
-    <td class="att">Autonomia</td>
-    <td><div id="autonomia1" style="display:inline"></div>&nbsp<div id="auton_arrow1" style="display:inline"></div></td>
-    <td><div id="autonomia2" style="display:inline"></div>&nbsp<div id="auton_arrow2" style="display:inline"></div></td>
-  </tr>
-  <tr>
-    <td class="att">Potência(cv/kw)</td>
-    <td><div id="potencia1" style="display:inline"></div>&nbsp<div id="pot_arrow1" style="display:inline"></div></td>
-    <td><div id="potencia2" style="display:inline"></div>&nbsp<div id="pot_arrow2" style="display:inline"></div></td>
-  </tr>
-  <tr>
-    <td class="att">Velocidade máxima (km/h)</td>
-    <td><div id="velocidade1" style="display:inline"></div>&nbsp<div id="vel_arrow1" style="display:inline"></div></td>
-    <td><div id="velocidade2" style="display:inline"></div>&nbsp<div id="vel_arrow2" style="display:inline"></div></td>
-  </tr>
-  <tr>
-    <td class="att">Aceleração de 0-100 (seg)</td>
-    <td><div id="aceleracao1" style="display:inline"></div>&nbsp<div id="acel_arrow1" style="display:inline"></div></td>
-    <td><div id="aceleracao2" style="display:inline"></div>&nbsp<div id="acel_arrow2" style="display:inline"></div></td>
-  </tr>
-    <tr>
-    <td class="att">Super Charger</td>
-    <td><div id="super1" style="display:inline"></div>&nbsp<div id="super_arrow1" style="display:inline"></div></td>
-    <td><div id="super2" style="display:inline"></div>&nbsp<div id="super_arrow2" style="display:inline"></div></td>
-  </tr>
-  <tr>
-    <td class="att">Piloto Automático</td>
-    <td><div id="piloto1" style="display:inline"></div>&nbsp<div id="pilot_arrow1" style="display:inline"></div></td>
-    <td><div id="piloto2" style="display:inline"></div>&nbsp<div id="pilot_arrow2" style="display:inline"></div></td>
-  </tr>
-  <tr>
-    <td class="att">Peso</td>
-    <td><div id="peso1" style="display:inline"></div>&nbsp<div id="peso_arrow1" style="display:inline"></div></td>
-    <td><div id="peso2" style="display:inline"></div>&nbsp<div id="peso_arrow2" style="display:inline"></div></td>
-  </tr>
-  <tr>
-    <td class="att">Lugares</td>
-    <td><div id="lugares1" style="display:inline"></div>&nbsp<div id="lugares_arrow1" style="display:inline"></div></td>
-    <td><div id="lugares2" style="display:inline"></div>&nbsp<div id="lugares_arrow2" style="display:inline"></div></td>
-  </tr>
-  <tr>
-    <td class="att">Capacidade Bagageira</td>
-    <td><div id="capacidade1" style="display:inline"></div>&nbsp<div id="cap_arrow1" style="display:inline"></div></td>
-    <td><div id="capacidade2" style="display:inline"></div>&nbsp<div id="cap_arrow2" style="display:inline"></div></td>
-  </tr>
- </table> 
-</div>
-</div>
-
-<div class="page-section" id="5"> </div>
+      <!-- FUTURO -->
+      <div class="page-section" id="5"> </div>
       <div class="futuro">
         <div class="Titulos"> O Futuro dos carros elétricos </div>
         <div class="futuroTexto"> 
           <p>Os carros elétricos já são muito frequentes nas estradas, com o acrescimo de modelos diferentes a aparecerem no mercado. Os preços destas máquinas estão cada vez a ficar mais baixos, e há um aumento no investimento das mesmas.</p>
           <p>Muitas marcas já anunciaram projetos para o futuro. Eis alguns modelos apresentados:</p>
         </div>
-        
+
         <div class="caixaImg"> 
           <a href="https://www.audi.com/en/experience-audi/models-and-technology/concept-cars/q4-e-tron-concept.html" target="_blank"> <img src="img/Futuro/Audi_Q4_e-tron.png" width="100%"> </a>
           <div class="texto">  
@@ -274,7 +320,7 @@
         <div class="caixaImg"> 
           <a href="https://www.bmw.pt/pt/topics/fascination-bmw/bmw-concept-vehicle/bmw-concept-i4-highlights.html" target="_blank"> <img src="img/Futuro/BMW_i4.png" width="100%"> </a>
           <div class="texto">  
-             BMW I4 - acima de 41.000 € <span class="textoPequeno"> <br> (Data de lançamento prevista: Fim de 2021)</span>
+            BMW I4 - acima de 41.000 € <span class="textoPequeno"> <br> (Data de lançamento prevista: Fim de 2021)</span>
           </div>  
         </div>
 
@@ -298,20 +344,35 @@
             Tesla Cybertruck - acima de 45.000 € <span class="textoPequeno"> <br> (Data de lançamento prevista: Fim de 2021)</span>
           </div>  
         </div>
-
       </div>
+      <!-- FIM FUTURO -->
+    </div> 
 
-<script src="./scripts/script.js"></script>
-<div id="root"></div>
+    <script src="./scripts/script.js"> </script>
+    <div id="root"></div>
+    
+  </body>
   <footer>  
-    <div>    
-      <a>Contacto</a>
-      <a>Contacto</a>
-      <a>Contacto</a>
-      <a>Contacto</a>
-      <a id="the-final-countdown"></a>
-     </div>  
-   </footer>
- </body>
+    <div class="autores">
+      Autores:
+      <ul>
+        <li>18466 - Roberto Meneses </li>
+        <li>19222 - João Machado </li>
+        <li>18546 - Rui Ramos </li>
+      </ul>        
+    </div>  
 
+    <div class="projeto"> 
+      AutoKW 
+      <p> Projeto criado no ambito da cadeira de Aplicações para a Internet I. </p>
+    </div>
+
+    <div class="instituicao"> 
+      Instituição 
+      <p> Instituto Politécnico de Viseu <br>
+        Escola Superior de Tecnologia e Gestão </p>
+    </div>
+
+    <div id="the-final-countdown"> </div>
+  </footer> 
 </html>

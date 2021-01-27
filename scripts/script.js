@@ -1,15 +1,30 @@
-window.onscroll = function() {navbarscroll()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function navbarscroll() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav"|| x.className === "topnav sticky" ) {
+    x.className += " responsive";
   } else {
-    navbar.classList.remove("sticky");
+    x.className = "topnav";
   }
 }
+
+ window.onscroll = function () { myFunction2() };
+
+  var navbar = document.getElementById("myTopnav");
+  var drop = document.getElementById("drop");
+  var sticky = navbar.offsetTop;
+
+function myFunction2() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        drop.classList.add("stickydrop");
+        } 
+        else {
+            navbar.classList.remove("sticky");
+            drop.classList.remove("stickydrop");
+          }
+}
+
+
 /**COMPARADOR **/
 var car1 = ["Tesla Model S", "639km", "613cv/451kW", "261 km/h", "2.5s", "Sim", "Sim", "2236kg", "5", "804lt", "106.600€"];
 var car2 = ["Tesla Model 3", "567km", "351cv/258kW", "261 km/h", "3.3s", "Sim", "Sim", "1844kg", "5", "524lt", "59.600€"];
@@ -336,12 +351,10 @@ if(x==1||y==1){
         document.getElementById("cap_arrow"+i).innerHTML ="&nbsp"
         document.getElementById("cap_arrow"+w).innerHTML ="&nbsp"
   }
-
-
 }  
-
-
 /**FIM COMPARADOR **/
+
+
 
 
 /**SLIDES **/
@@ -350,18 +363,37 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName("slides");
+  var pontos = document.getElementsByClassName("ponto");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}  
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  for (i = 0; i < pontos.length; i++) {
+    pontos[i].className = pontos[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  pontos[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every X seconds
 }
 /**FIM SLIDES */
+
+
+
+
+/**BUTTON UP **/
+$(window).scroll(function() {
+      if ($(this).scrollTop() >= 350) {
+          $('#top').fadeIn("fast");
+      } else {
+          $('#top').fadeOut("fast");
+      }
+});
+
+$('#top').click(function() {
+      $('body,html').animate({
+            scrollTop : 0
+      }, 200);
+});
+/**FIM BUTTON UP **/
