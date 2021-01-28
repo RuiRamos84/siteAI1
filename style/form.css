@@ -3,7 +3,6 @@ Form{
     padding: 5%;
     max-width: 650px;    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   // text-align: right;
 }
 
 
@@ -110,18 +109,4 @@ textarea {
   color: black;
   font-size: 0.875em;
   border: none;
-}
-/* ========MEDIA QUERIES======== */
-@media screen and (min-width: 768px) {
-  #save-later-form,
-  .alert {
-    width: 60vw;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #save-later-form,
-  .alert {
-    width: 40vw;
-  }
 }
