@@ -147,12 +147,13 @@ body{
 
 footer {  
   background-color: #333;  
-  padding-left: 20%;
+  padding-left: 16%;
   padding-right: 1%;
   height: 200px;
 }
 
 #the-final-countdown{ 
+  float:right;
   position: relative;
   bottom: 375px;
   text-align: right;
@@ -164,6 +165,7 @@ footer {
 
 .autores {
   position: relative;
+left: 5%;
   padding-top: 3%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #4e96f3;
@@ -171,6 +173,9 @@ footer {
 }
 
 .autores li {
+  list-style-type:none;
+  text-align:start;
+  
   font-size: 16px;
   line-height: 1.4;
   color: white;
@@ -179,7 +184,7 @@ footer {
 .projeto {
   position: relative;
   bottom: 129px;
-  left: 20%;
+  left: 33%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #4e96f3;
   font-size: 20px;
@@ -196,7 +201,7 @@ footer {
 .instituicao {
   position: relative;
   bottom: 255px;
-  left: 40%;
+  left: 60%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #4e96f3;
   font-size: 20px;
